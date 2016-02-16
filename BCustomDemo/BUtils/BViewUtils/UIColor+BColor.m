@@ -18,23 +18,9 @@
 }
 
 /**
- * @brief 浅蓝色
- ****/
-+ (UIColor *)lightBlueColor{
-    return [UIColor colorWithRed:0.5 green:0.75 blue:0.93 alpha:1];
-}
-
-/***
- * @brief 浅浅灰
- ***/
-+ (UIColor *)lightLightGray{
-    return [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.3];
-}
-
-/***
- * @brief 透明灰色
- ***/
-+ (UIColor *)transperentGray{
-    return [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.3];
+ * @brief 弹窗的半透明背景色
+ **/
++ (UIColor *)alertBackgroudColor{
+    return [UIColor colorWithRed:0.30 green:0.30 blue:0.30 alpha:0.50];
 }
 @end

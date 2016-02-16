@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "UIView+BView.h"
+#import "BTwoSelectionAlertView.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -21,6 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.testView setCornerRadius];
+}
+
+- (void)viewDidLayoutSubviews{
+    [BTwoSelectionAlertView showAlertViewWithTarget:self window:((AppDelegate *)[UIApplication sharedApplication].delegate).window title:@"title" message:@"message" confirmText:@"YES" cancelText:@"cancel"];
 }
 
 - (void)didReceiveMemoryWarning {

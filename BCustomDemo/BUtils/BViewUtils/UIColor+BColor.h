@@ -15,17 +15,7 @@
 + (UIColor *)themeLightBlueColor;
 
 /**
- * @brief 浅蓝色
- ****/
-+ (UIColor *)lightBlueColor;
-
-/***
- * @brief 浅浅灰
- ***/
-+ (UIColor *)lightLightGray;
-
-/***
- * @brief 透明灰色
- ***/
-+ (UIColor *)transperentGray;
+ * @brief 弹窗的半透明背景色
+ **/
++ (UIColor *)alertBackgroudColor;
 @end
