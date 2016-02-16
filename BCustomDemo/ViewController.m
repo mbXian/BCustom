@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIView+BView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.testView setCornerRadius];
 }
 
 - (void)didReceiveMemoryWarning {
