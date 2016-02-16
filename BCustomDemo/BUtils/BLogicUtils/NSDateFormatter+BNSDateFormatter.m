@@ -11,22 +11,7 @@
 @implementation NSDateFormatter (BNSDateFormatter)
 
 /**
- * brief 返回日期格式：yyyy/MM/dd
- **/
-+ (instancetype)authDateFormatter {
-    static NSDateFormatter *dateFormatter = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [[NSDateFormatter alloc] init];
-        NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-        [dateFormatter setLocale:usLocale];
-        [dateFormatter setDateFormat:@"yyyy/MM/dd"];
-    });
-    return dateFormatter;
-}
-
-/**
- * brief 返回日期格式：yyyy-MM-dd HH:mm:ss
+ * brief 日期格式：yyyy-MM-dd HH:mm:ss Formatter
  **/
 + (instancetype)authDateTimeFormatter {
     static NSDateFormatter *dateTimeFormatter = nil;
@@ -41,7 +26,7 @@
 }
 
 /**
- * brief 返回日期格式：yyyy-MM-dd HH:mm
+ * brief 日期格式：yyyy-MM-dd HH:mm Formatter
  **/
 + (instancetype)reserveStartTimeFormatter {
     static NSDateFormatter *dateTimeFormatter = nil;
@@ -55,8 +40,39 @@
     return dateTimeFormatter;
 }
 
+
 /**
- * brief 返回日期格式：HH:mm
+ * brief 日期格式：yyyy-MM-dd Formatter
+ **/
++ (instancetype)pileEvaluateDateFormatter {
+    static NSDateFormatter *dateTimeFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateTimeFormatter = [[NSDateFormatter alloc] init];
+        NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+        [dateTimeFormatter setLocale:usLocale];
+        [dateTimeFormatter setDateFormat:@"yyyy-MM-dd"];
+    });
+    return dateTimeFormatter;
+}
+
+/**
+ * brief 日期格式：yyyy/MM/dd Formatter
+ **/
++ (instancetype)authDateFormatter {
+    static NSDateFormatter *dateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [[NSDateFormatter alloc] init];
+        NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
+        [dateFormatter setLocale:usLocale];
+        [dateFormatter setDateFormat:@"yyyy/MM/dd"];
+    });
+    return dateFormatter;
+}
+
+/**
+ * brief 日期格式：HH:mm Formatter
  **/
 + (instancetype)reserveEndTimeFormatter {
     static NSDateFormatter *dateTimeFormatter = nil;
@@ -71,7 +87,7 @@
 }
 
 /**
- * brief 返回日期格式：M月d日
+ * brief 日期格式：M月d日 Formatter
  **/
 + (instancetype)mapFilterDateFormatter {
     static NSDateFormatter *formatter = nil;
@@ -83,20 +99,5 @@
         [formatter setDateFormat:@"M月d日"];
     });
     return formatter;
-}
-
-/**
- * brief 返回日期格式：yyyy-MM-dd
- **/
-+ (instancetype)pileEvaluateDateFormatter {
-    static NSDateFormatter *dateTimeFormatter = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        dateTimeFormatter = [[NSDateFormatter alloc] init];
-        NSLocale *usLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-        [dateTimeFormatter setLocale:usLocale];
-        [dateTimeFormatter setDateFormat:@"yyyy-MM-dd"];
-    });
-    return dateTimeFormatter;
 }
 @end

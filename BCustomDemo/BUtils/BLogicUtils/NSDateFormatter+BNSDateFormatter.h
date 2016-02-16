@@ -11,32 +11,32 @@
 @interface NSDateFormatter (BNSDateFormatter)
 
 /**
- * brief 返回日期格式：yyyy/MM/dd
- **/
-+ (instancetype)authDateFormatter;
-
-/**
- * brief 返回日期格式：yyyy-MM-dd HH:mm:ss
+ * brief 日期格式：yyyy-MM-dd HH:mm:ss Formatter
  **/
 + (instancetype)authDateTimeFormatter;
 
 /**
- * brief 返回日期格式：yyyy-MM-dd HH:mm
+ * brief 日期格式：yyyy-MM-dd HH:mm Formatter
  **/
 + (instancetype)reserveStartTimeFormatter;
 
 /**
- * brief 返回日期格式：yyyy-MM-dd HH:mm
+ * brief 日期格式：yyyy-MM-dd Formatter
+ **/
++ (instancetype)pileEvaluateDateFormatter;
+
+/**
+ * brief 日期格式：yyyy/MM/dd Formatter
+ **/
++ (instancetype)authDateFormatter;
+
+/**
+ * brief 日期格式：HH:mm Formatter
  **/
 + (instancetype)reserveEndTimeFormatter;
 
 /**
- * brief 返回日期格式：M月d日
+ * brief 日期格式：M月d日 Formatter
  **/
 + (instancetype)mapFilterDateFormatter;
-
-/**
- * brief 返回日期格式：yyyy-MM-dd
- **/
-+ (instancetype)pileEvaluateDateFormatter;
 @end

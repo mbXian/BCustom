@@ -19,6 +19,7 @@
 		BA6742E41C71D110001F44BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA6742E21C71D110001F44BD /* LaunchScreen.storyboard */; };
 		BA6742EF1C71D110001F44BD /* BCustomDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6742EE1C71D110001F44BD /* BCustomDemoTests.m */; };
 		BA6742FA1C71D111001F44BD /* BCustomDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6742F91C71D111001F44BD /* BCustomDemoUITests.m */; };
+		BAFB31F01C7354F10036CEA0 /* NSString+BString.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB31EF1C7354F10036CEA0 /* NSString+BString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		BA6742F51C71D110001F44BD /* BCustomDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCustomDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6742F91C71D111001F44BD /* BCustomDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCustomDemoUITests.m; sourceTree = "<group>"; };
 		BA6742FB1C71D111001F44BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFB31EE1C7354F10036CEA0 /* NSString+BString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BString.h"; sourceTree = "<group>"; };
+		BAFB31EF1C7354F10036CEA0 /* NSString+BString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 		BA57EC631C7330DA0039B794 /* BLogicUtils */ = {
 			isa = PBXGroup;
 			children = (
+				BAFB31EE1C7354F10036CEA0 /* NSString+BString.h */,
+				BAFB31EF1C7354F10036CEA0 /* NSString+BString.m */,
 				BA57EC641C7331160039B794 /* NSDateFormatter+BNSDateFormatter.h */,
 				BA57EC651C7331160039B794 /* NSDateFormatter+BNSDateFormatter.m */,
 			);
@@ -322,6 +327,7 @@
 				BA57EC621C732FE60039B794 /* UIView+BView.m in Sources */,
 				BA6742D61C71D110001F44BD /* main.m in Sources */,
 				BA57EC611C732FE60039B794 /* UILabel+BLabel.m in Sources */,
+				BAFB31F01C7354F10036CEA0 /* NSString+BString.m in Sources */,
 				BA57EC661C7331160039B794 /* NSDateFormatter+BNSDateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
